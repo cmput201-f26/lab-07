@@ -92,8 +92,9 @@ If there are no differences on a line, `diff` will simply show the line common b
 Your task is to create a bash script (script.sh) that compares files against each other using diff. There are 4 Testcases, each with two different versions of text files. Each Testcase contains some mistakes/differences or none at all. 
 
 Your goal is to write a bash script that: 
-* Checks for differences 
-* Creates a new file in the diffoutput folder in your repository that contains the output from the diff command. (It may be helpful to look into bash for loops.)
+* Checks for differences for all Testcases 
+* Creates a new file for each Testcase that contains the output from the diff command. (It may be helpful to look into bash for loops.)
+* Store these files in a directory called diffoutput 
 
 Each diff output file should be named by which Testcase files it went through (“Testcase#Output”). For example: You are comparing Testcase 1 version 1 and version 2 files, name the file: Testcase1Output, only if there are differences in the text. If there are no differences between the two files, do not generate any files. 
 
@@ -105,6 +106,6 @@ No questions from TAs this time, we are looking for completion of this ILC.
 
 2. Make sure your forked repository is public (Hint: Use git clone)
 
-3. After completing your bash script, be ready to show your script file and the diffoutput folder to TAs for your mark! 
+3. After completing your bash script, be ready to show your script file and the diffoutput directory to TAs for your mark! 
 
 
