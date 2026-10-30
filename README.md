@@ -2,26 +2,6 @@
 
 For today's ILC, we are working with bash and the `diff` command. 
 
-## **Windows Users**
-
-Windows has an unfortunate tendency to break things. If you decide to work on this ILC locally, when `scp`-ing your code 
-over to the lab machines, Windows will destroy your bash scripts. This means 
-they **will not run** on the lab machines after you `scp` them over. You will
-need to run the following command to fix each file individually on the lab 
-machine, every time you copy:
-
-```bash
-sed -i 's/\r$//' <file>
-```
-
-Some examples of scripts you'll need to fix include:
-
-```bash
-sed -i 's/\r$//' script.sh
-```
-
-**If a Windows user does not do this, the code will not run.**
-
 ## The `diff` Command
 The `diff` command is used to compare the content of two files. When working on labs, you will be given text files containing expected output. Using the `diff` command is how you will determine whether your program produces the correct output or not. This is done by comparing your output with the given expected output. 
 The purpose of this ILC is for you to get familiar with reading the output produced by `diff`, so you can comfortably determine where your program went wrong in future labs.
